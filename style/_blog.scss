@@ -1,0 +1,178 @@
+.blog {
+
+  // .blog__inner
+
+  &__inner {
+    margin-bottom: 120px;
+  }
+
+  // .blog__top
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 40px 0;
+  }
+
+  // .blog__top--border
+
+  &__top--border {
+  }
+
+  // .blog__title
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  // .blog__title-text
+
+  &__title-text {
+    max-width: 465px;
+    text-align: center;
+  }
+
+  // .blog__bottom
+
+  &__bottom {
+    
+  }
+
+  // .blog__list
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  // .blog__item
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  // .blog__image
+
+  &__image {
+    position: relative;
+    z-index: 0;
+    
+  }
+
+  // .blog__image
+
+  &__info {
+   border: 1px solid #C4C4C4;
+   max-width: 640px;
+   padding: 40px;
+  }
+
+  // .blog__border--name
+
+  &__border--name {
+    margin-right: 20px;
+  }
+
+  // .blog__border--date
+
+  &__border--date {
+  }
+
+  // .blog__title-txt
+
+  &__title-txt {
+    margin: 25px 0 25px 0;
+    
+  }
+
+  // .blog__text
+
+  &__text {
+    max-width: 550px;
+    font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0.2px;
+color: $grey-color;
+  }
+}
+
+  // .border__stringle
+
+  .border__stringle {
+  }
+
+
+.blog--button {
+  position: absolute;
+  z-index: 50;
+  left: 200px;
+  top: 150px;
+}
+
+
+/*==========================================================*/
+
+
+@media (max-width:1350px){
+  .blog__list{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog__item:first-child{
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 500px){
+  .blog__image img{
+    width: 320px;
+}
+
+  .blog--button{
+      left: 50px;
+      top: 60px;
+}
+
+  .blog__item{
+    max-width: 320px;
+}
+
+  .blog__info{
+    padding: 20px;
+  }
+
+  .blog__text{
+    font-size: 18px;
+  }
+
+  .blog__border--name{
+    font-size: 13px;
+  }
+
+  .blog__border--date{
+    font-size: 13px;
+  }
+
+  .blog__title-txt{
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+  }
+
+}
+
+@media (max-width: 450px){
+  .blog__title{
+    text-align: center;
+  }
+}

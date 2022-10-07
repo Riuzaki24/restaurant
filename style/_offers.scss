@@ -1,0 +1,164 @@
+.offers {
+margin: 145px 0 120px 0;
+  // .offers__inner
+
+  &__inner {
+  }
+
+  // .offers__top
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  // .offers__title
+
+  &__title {
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+
+  // .offers__title-text
+
+  &__title-text {
+    text-align: center;
+    max-width: 815px;
+  }
+
+  // .offers__bottom
+
+  &__bottom {
+    
+  }
+
+  // .offers__list
+
+  &__list {
+    display: flex;
+  }
+
+  // .offers__item
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__item:last-child{
+    margin-right: 0px;
+  }
+
+  // .offers__item-img
+  
+  &__item-img {
+    position: relative;
+  }
+
+  // .offers__info
+
+  &__info {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+  }
+
+  // .offers__price
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    margin:0 0 60px 25px;
+    text-align: center;font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 70%;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: $blue-color;
+    max-width: 100px;
+  }
+
+  &__price span{
+    font-family: 'Cormorant Infant';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 110%;
+letter-spacing: 0.2px;
+color: $blue-color;
+  }
+
+  // .offers__item-title
+
+  &__item-title {
+    margin-bottom: 5px;
+  }
+
+  // .offers__item-text
+
+  &__item-text {
+    max-width: 245px;
+  }
+}
+
+.offers--border {
+  border-color: $blue-color;
+}
+
+.offers__price--white,
+.offers__price--white span{
+  color: $white-color;
+}
+
+
+/*=====================================================*/
+
+@media (max-width:1400px){
+  .offers__list{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offers__item{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:690px){
+.offers__item-img img{
+  display: none;
+}
+
+.offers__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: unset;
+}
+
+.offers__price{
+  margin: 0 0 20px 0;
+  
+}
+
+.offers__price--white{
+  color: $blue-color;
+}
+
+.offers__price--white span{
+  color: $blue-color;
+}
+
+.offers__item{
+  margin-bottom: 40px;
+}
+
+.offers__item-text{
+  text-align: center;
+}
+}
+

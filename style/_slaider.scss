@@ -1,0 +1,236 @@
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list { 
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{ 
+  display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки (булиты) */
+.slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0 130px 0;
+}
+.slick-dots li{
+  list-style: none;
+  margin-right: 10px;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+  background-color: $white-color;
+}
+/* Элемент точки */
+.slick-dots button{
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $grey-color;
+  
+}
+
+
+
+.slaider {
+  background-color: $blue-color;
+  // .slaider__inner
+
+  &__inner {
+    
+  }
+
+  // .slaider__top
+
+  &__top {
+    margin-bottom: 80px;
+  }
+
+  // .slaider__title-testimonial
+
+  &__title-testimonial {
+    display: inline-flex;
+    border: 2px solid $yellow-color;
+    border-width: 2px 0px;    
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: $white-color;
+    margin-top: 145px;
+  }
+
+  // .slaider__title
+
+  &__title {
+    color: $white-color;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+  }
+
+  // .slaider__top-text
+
+  &__top-text {
+    color: $white-color;
+    font-size: 20px;
+  }
+
+		// .slaider__bottom
+
+		&__bottom {
+      
+		}
+
+		// .slaider__list
+
+		&__list {
+		}
+
+		// .slaider__item
+
+		&__item {
+      margin-right: 30px;
+      max-width: 544px;
+      max-height: 322px;
+      background: #343942;
+      padding: 0 40px;
+		}
+
+    // .slaider__item-img
+
+		&__item-img {
+      display: flex;
+		}
+
+		// .slaider__item-info
+
+		&__item-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 30px;
+		}
+
+		// .slaider__image
+
+		&__image {
+		}
+
+		// .slaider__name
+
+		&__name {
+      font-family: 'Cormorant Infant';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 140%;
+letter-spacing: 0.2px;
+color: $white-color;
+
+		}
+
+		// .slaider__town
+
+		&__town {
+      font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0.2px;
+color: $yellow-color;
+		}
+
+		// .slaider__text
+
+		&__text {
+      font-family: 'Cormorant Infant';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 156%;
+letter-spacing: 0.25px;
+color: $white-color;
+
+		}
+}
+
+.slaider__image-background{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.slaider--line {
+  margin: 30px 0;
+  max-width: 464px;
+  height: 1px;
+}
+
+/*==========================================================================*/
+
+
+@media (max-width:620px){
+  .slaider__item{
+    margin-right: 10px;
+  }
+}
+
+@media (max-width:450px){
+ .slaider__name{
+  min-width: 120px;
+  font-size: 20px;
+ }
+
+ .slaider__town{
+  min-width: 100px;
+  font-size: 18px;
+ }
+
+ .slaider__text{
+  font-size: 16px;
+  margin-top: 15px;
+ }
+}
+
+@media (max-width:380px){
+.slaider__item-info{
+  margin-left: 10px;
+}
+
+.slaider__item{
+  padding: 0 30px;
+}
+}

@@ -1,0 +1,275 @@
+.special {
+
+  // .special__inner
+
+  &__inner {
+    margin: 120px 0 150px 30px;
+    display: flex;
+    
+  }
+
+  // .special__left
+
+  &__left {
+    max-width: 480px;
+    margin-right: 55px;
+  }
+
+  // .special__title-menu
+
+  &__title-menu {
+    display: inline-flex;
+    border: 2px solid $yellow-color;
+    border-width: 2px 0px;    
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__title-menu span {
+    margin: 4px;
+  }
+
+  // .special__title
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  // .special__left-text
+
+  &__left-text {
+    margin-bottom: 30px;
+  }
+
+  // .special__left-img
+
+  &__left-img {
+    margin-bottom: 60px;
+  }
+
+  // .special__button
+
+  &__button {
+    color: $yellow-color;
+  }
+
+  // .special__right
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  // .special__list
+
+  &__list {
+    margin-bottom: 25px;
+  }
+
+  // .special__right-title
+
+  &__right-title {
+    font-family: 'Cormorant Infant';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 140%;
+letter-spacing: 0.2px;
+color: $blue-color;
+margin-bottom: 40px;
+  }
+
+  // .special__item
+
+  &__item {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  // .special__right-img
+
+  &__right-img {
+    margin-right: 20px;
+  }
+
+  // .special__item-info
+
+  &__item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  // .special__name
+
+  &__name {
+    font-family: 'Cormorant Infant';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 140%;
+letter-spacing: 0.2px;
+color: $blue-color;
+  }
+
+  // .special__item-line
+
+  &__item-line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 800px;
+  }
+
+  // .special__description
+
+  &__description {
+  }
+
+  // .special__cost
+
+  &__cost {
+  }
+}
+
+.special--line {
+  position: relative;
+  margin: 0 10px;
+  height: 2px;
+  background: #aaa;
+  flex-grow: 1;
+  top: 5px;
+}
+
+
+/*============================================================*/
+
+@media (max-width: 1430px){
+  .special__inner{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .special__left{
+   margin-right: 0;
+   margin-bottom: 70px;
+  }
+
+  .special__title-menu{
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 80px;
+  }
+
+  .special__left-text{
+    display: flex;
+    text-align: center;
+  }
+
+  .special__title{
+    display: flex;
+    justify-content: center;
+    min-width: 382px;
+  }
+
+  .special__left-img{
+    display: none;
+  }
+
+  .special__button{
+    max-width: 255px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 1000px){
+  .special__item-line {
+    display: flex;
+    align-items: center;
+    min-width: 800px;
+    justify-content: center;
+  }
+    .special__item {
+      display: flex;
+      margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .special__item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.special__cost{
+  position: relative;
+  top: -4px;
+  margin-left: 20px;
+}
+
+.special__right-title{
+  text-align: center;
+}
+
+.special--line{
+  display: none;
+}
+
+.special__right-img{
+  margin-right: 0;
+}
+}
+
+@media (max-width: 530px){
+.special__item-line{
+  flex-direction: column;
+}
+
+.special__cost{
+  margin-left: 0;
+}
+
+.special__description{
+  font-size: 14px;
+}
+
+.special__name{
+  font-size: 20px;
+}
+
+.special__right-title{
+  margin-bottom: 20px;
+}
+
+.special__inner{
+margin-left: 0;
+}
+
+.special__left-text{
+  font-size: 14px;
+  margin: 15px auto;
+  max-width: 300px;
+}
+
+.special__title{
+  font-size: 32px;
+}
+}
+
+
+@media (max-width: 410px){
+
+}
